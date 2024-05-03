@@ -5,30 +5,29 @@
   padding: 0;
 }
 
-.home {
+.main-home {
   width: 100%;
   height: 100%;
   margin-top: 20%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
-.home .container {
+.main-home .container {
   width: 450px;
   height: 382px;
   align-self: flex-end;
 }
-.home .container h1 {
+.main-home .container h1 {
   margin: 20px 0 20px 0;
 }
-.home .container .body-text {
+.main-home .container .body-text {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 32px;
 }
-.home .explore-circle {
+.main-home .explore-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,13 +37,77 @@
   border-radius: 50%;
   align-self: flex-end;
 }
-.home .explore {
+.main-home .explore {
   font-family: "Bellefair", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
   letter-spacing: 2px;
   color: black;
+}
+
+.main-moon {
+  width: 100%;
+  height: 100%;
+}
+.main-moon h5 {
+  margin-top: 7%;
+  margin-left: 10%;
+}
+.main-moon .container {
+  width: 90%;
+  display: flex;
+  margin: 10% auto;
+  justify-content: space-around;
+}
+.main-moon img {
+  width: 445px;
+  height: 445px;
+}
+.main-moon .info {
+  width: 445px;
+  height: 472px;
+  display: flex;
+  flex-direction: column;
+}
+.main-moon .menu {
+  width: 286px;
+  height: 34px;
+  display: flex;
+  margin: 0 0 30px 0;
+}
+.main-moon .menu-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  margin: 0 30px 0 0;
+}
+.main-moon .body-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 15px 0 50px 0;
+}
+.main-moon hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main-moon .facts {
+  display: flex;
+  margin: 30px 0 0 0;
+}
+.main-moon .fact {
+  width: 143px;
+  height: 61px;
+}
+.main-moon .one {
+  margin: 0 100px 0 0;
+}
+.main-moon .subheading-1 {
+  margin: 15px 0 0 0;
 }
 
 .light {
@@ -55,7 +118,17 @@
 body {
   background: #0B0D17;
   color: #FFFFFF;
+}
+
+.body-home {
   background-image: url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.destination {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -99,14 +172,6 @@ nav .nav-links {
   justify-content: center;
   position: absolute;
   left: 525px;
-}
-nav .nav-text {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: 2.7px;
-  margin: 0 30px 0 30px;
 }
 
 h1 {
@@ -158,4 +223,13 @@ h5 {
   font-style: normal;
   font-size: 14px;
   letter-spacing: 2.35px;
+}
+
+.nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  margin: 0 30px 0 30px;
 }

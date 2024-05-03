@@ -2,6 +2,7 @@
 @import './resets'; // partial
 @import './variables'; //partial
 @import './home';
+@import './moon';
 
 // mixin is a function that define styles like light and dark theme
 @mixin flexCenter($direction) {
@@ -31,7 +32,17 @@
 body {
   background: $color-primary;
   color: $text-color;
+}
+
+.body-home {
   background-image: url('../assets/home/background-home-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.destination {
+  background-image: url('../assets/destination/background-destination-desktop.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -77,15 +88,6 @@ nav {
     justify-content: center;
     position: absolute;
     left: 525px;
-  }
-
-  .nav-text {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin: 0 30px 0 30px;
   }
 }
 
@@ -140,4 +142,11 @@ h5 {
   letter-spacing: 2.35px;
 }
 
-
+.nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  margin: 0 30px 0 30px;
+}
