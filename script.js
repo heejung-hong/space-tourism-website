@@ -25,4 +25,5 @@ fetch('https://raw.githubusercontent.com/heejung-hong/space-tourism-website/main
     document.querySelector('#image').src = image;
     document.querySelector('#image').alt = "commander";
   });
-    
+
+
