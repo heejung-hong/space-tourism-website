@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Space tourism website</title>
   <link rel="stylesheet" href="./scss/main.css">
+  <script src="./script.js" defer></script>
 </head>
 <body class="technology">
   <header>
@@ -29,20 +30,18 @@
     <div class="container">
       <div class="info">
         <div class="dots-menu">
-          <span class="dots"><h4>1</h4></span>
-          <span class="dots"><h4>2</h4></span>
-          <span class="dots"><h4>3</h4></span>
+          <span class="dots" onclick="vehicle()"><h4>1</h4></span>
+          <span class="dots" onclick="spaceport()"><h4>2</h4></span>
+          <span class="dots" onclick="capsule()"><h4>3</h4></span>
         </div>
         <div>    
           <div class="nav-text">THE TERMINOLOGY...</div>
-          <h3>LAUNCH VEHICLE</h3>
-          <div class="body-text">
-            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
-          </div>
+          <h3 id="techName"></h3>
+          <div class="body-text" id="techDescription"></div>
         </div>        
       </div>
 
-      <img src="./assets/technology/image-launch-vehicle-portrait.jpg">
+      <img id="techImage">
     </div>
   </main>
 
