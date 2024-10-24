@@ -8,7 +8,7 @@
 .main-home {
   width: 100%;
   height: 100%;
-  margin-top: 20%;
+  margin-top: 15%;
   display: flex;
   justify-content: space-around;
 }
@@ -51,13 +51,13 @@
   height: 100%;
 }
 .main-moon h5 {
-  margin-top: 7%;
+  margin-top: 5%;
   margin-left: 10%;
 }
 .main-moon .container {
   width: 90%;
   display: flex;
-  margin: 10% auto;
+  margin: 7% auto;
   justify-content: space-around;
 }
 .main-moon img {
@@ -117,11 +117,10 @@
 .main-crew .container {
   width: 90%;
   display: flex;
-  margin: 7% auto;
-  justify-content: space-around;
+  margin: 5% auto 0 10%;
 }
 .main-crew .info {
-  width: 488px;
+  width: 50%;
   height: 472px;
   display: flex;
   flex-direction: column;
@@ -162,11 +161,24 @@
   transition: background-color 0.6s ease;
 }
 .main-crew .dots:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+.main-crew .dots-active {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0 20px 0 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 .main-crew img {
-  width: 568px;
-  height: 712px;
+  height: 75%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 5% 0 0;
 }
 
 .main-technology {
@@ -175,7 +187,7 @@
   position: relative;
 }
 .main-technology h5 {
-  margin-top: 7%;
+  margin-top: 5%;
   margin-left: 10%;
 }
 .main-technology h5 span {
@@ -231,12 +243,28 @@
   text-align: center;
 }
 .main-technology .dots h4 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main-technology .dots:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .main-technology .dots:hover h4 {
+  color: black;
+}
+.main-technology .dots-active {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  margin: 0 0 40px 0;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+.main-technology .dots-active h4 {
   color: black;
 }
 .main-technology img {
@@ -306,7 +334,7 @@ nav .rectangle {
   background-color: #FFFFFF;
   z-index: 1;
   position: absolute;
-  left: 100px;
+  right: 800px;
 }
 nav .nav-links {
   display: flex;
@@ -319,7 +347,7 @@ nav .nav-links {
           backdrop-filter: blur(5px);
   justify-content: center;
   position: absolute;
-  left: 525px;
+  right: 0px;
 }
 
 h1 {

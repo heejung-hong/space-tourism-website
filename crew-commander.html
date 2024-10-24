@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-  <link rel="stylesheet" href="./scss/main.css">
-  <script src="./script.js" defer></script>
-</head>
-<body class="crew">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <header>
-    <nav>
-      <div class="nav-container">
-        <img src="./assets/shared/logo.svg" alt="logo">
-        <div class="rectangle"></div>
-        <div class="nav-links">
-          <a class="nav-text" href="index.html"><b>00</b> HOME</a>
-          <a class="nav-text" href="./destination-moon.html"><b>01</b> DESTINATION</a>
-          <a class="nav-text" href="./crew-commander.html"><b>02</b> CREW</a>
-          <a class="nav-text" href="./technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="crew">
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+          <div class="rectangle"></div>
+          <div class="nav-links">
+            <a class="nav-text" href="index.html"><b>00</b> HOME</a>
+            <a class="nav-text" href="./destination-moon.html"
+              ><b>01</b> DESTINATION</a
+            >
+            <a class="nav-text" href="./crew-commander.html"><b>02</b> CREW</a>
+            <a class="nav-text" href="./technology-vehicle.html"
+              ><b>03</b> TECHNOLOGY</a
+            >
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <main class="main-crew">
+      <div class="container">
+        <div class="info">
+          <h5><span>02</span>&nbsp;&nbsp;MEET YOUR CREW</h5>
+
+          <h4 id="role"></h4>
+
+          <h3 id="name"></h3>
+
+          <div class="body-text" id="bio">Waiting for data</div>
+
+          <div class="dots-menu">
+            <span class="dots" id="dotsCommander" onclick="commander()"></span>
+            <span
+              class="dots"
+              id="dotsSpecialist"
+              onclick="specialist()"
+            ></span>
+            <span class="dots" id="dotsPilot" onclick="pilot()"></span>
+            <span class="dots" id="dotsEngineer" onclick="engineer()"></span>
+          </div>
+        </div>
+
+        <img id="image" />
       </div>
-    </nav>
-  </header>
-
-  <main class="main-crew">
-    
-    <div class="container">
-      <div class="info">
-
-        <h5><span>02</span>&nbsp;&nbsp;MEET YOUR CREW</h5>
-    
-        <h4 id="role"></h4>
-
-        <h3 id="name"></h3>
-
-        <div class="body-text" id="bio">
-          Waiting for data
-        </div>
-        
-        <div class="dots-menu">
-          <span class="dots" onclick="commander()"></span>
-          <span class="dots" onclick="specialist()"></span>
-          <span class="dots" onclick="pilot()"></span>
-          <span class="dots" onclick="engineer()"></span>
-        </div>
-      </div>
-
-      <img id="image">
-    </div>
-  </main>
-
-
-  
-  
-
-  
-</body>
+    </main>
+  </body>
 </html>

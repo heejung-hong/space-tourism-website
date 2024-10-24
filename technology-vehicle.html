@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-  <link rel="stylesheet" href="./scss/main.css">
-  <script src="./script.js" defer></script>
-</head>
-<body class="technology">
-  <header>
-    <nav>
-      <div class="nav-container">
-        <img src="./assets/shared/logo.svg" alt="logo">
-        <div class="rectangle"></div>
-        <div class="nav-links">
-          <a class="nav-text" href="index.html"><b>00</b> HOME</a>
-          <a class="nav-text" href="./destination-moon.html"><b>01</b> DESTINATION</a>
-          <a class="nav-text" href="./crew-commander.html"><b>02</b> CREW</a>
-          <a class="nav-text" href="./technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="technology">
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+          <div class="rectangle"></div>
+          <div class="nav-links">
+            <a class="nav-text" href="index.html"><b>00</b> HOME</a>
+            <a class="nav-text" href="./destination-moon.html"
+              ><b>01</b> DESTINATION</a
+            >
+            <a class="nav-text" href="./crew-commander.html"><b>02</b> CREW</a>
+            <a class="nav-text" href="./technology-vehicle.html"
+              ><b>03</b> TECHNOLOGY</a
+            >
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main class="main-technology">
-    <h5><span>03</span>&nbsp;&nbsp;SPACE LAUNCH 101</h5>
-    <div class="container">
-      <div class="info">
-        <div class="dots-menu">
-          <span class="dots" onclick="vehicle()"><h4>1</h4></span>
-          <span class="dots" onclick="spaceport()"><h4>2</h4></span>
-          <span class="dots" onclick="capsule()"><h4>3</h4></span>
+      </nav>
+    </header>
+    <main class="main-technology">
+      <h5><span>03</span>&nbsp;&nbsp;SPACE LAUNCH 101</h5>
+      <div class="container">
+        <div class="info">
+          <div class="dots-menu">
+            <span class="dots" id="dotsVehicle" onclick="vehicle()"
+              ><h4>1</h4></span
+            >
+            <span class="dots" id="dotsSpaceport" onclick="spaceport()"
+              ><h4>2</h4></span
+            >
+            <span class="dots" id="dotsCapsule" onclick="capsule()"
+              ><h4>3</h4></span
+            >
+          </div>
+          <div>
+            <div class="nav-text">THE TERMINOLOGY...</div>
+            <h3 id="techName"></h3>
+            <div class="body-text" id="techDescription"></div>
+          </div>
         </div>
-        <div>    
-          <div class="nav-text">THE TERMINOLOGY...</div>
-          <h3 id="techName"></h3>
-          <div class="body-text" id="techDescription"></div>
-        </div>        
+
+        <img id="techImage" />
       </div>
-
-      <img id="techImage">
-    </div>
-  </main>
-
-</body>
+    </main>
+  </body>
 </html>

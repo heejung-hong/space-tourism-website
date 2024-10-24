@@ -1,17 +1,16 @@
-
 .main-moon {
   width: 100%;
   height: 100%;
 
   h5 {
-    margin-top: 7%;
+    margin-top: 5%;
     margin-left: 10%;
   }
 
   .container {
     width: 90%;
     display: flex;
-    margin: 10% auto;
+    margin: 7% auto;
     justify-content: space-around;
   }
 
@@ -43,7 +42,6 @@
     margin: 0 30px 0 0;
   }
 
-  
   .body-text {
     font-family: "Barlow", sans-serif;
     font-weight: 400;
@@ -66,7 +64,7 @@
     width: 143px;
     height: 61px;
   }
-  
+
   .one {
     margin: 0 100px 0 0;
   }
@@ -75,4 +73,3 @@
     margin: 15px 0 0 0;
   }
 }
-

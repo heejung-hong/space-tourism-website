@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
-@import './resets'; // partial
-@import './variables'; //partial
-@import './home';
-@import './moon';
-@import './crew';
-@import './technology';
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+@import "./resets"; // partial
+@import "./variables"; //partial
+@import "./home";
+@import "./moon";
+@import "./crew";
+@import "./technology";
 
 // mixin is a function that define styles like light and dark theme
 @mixin flexCenter($direction) {
@@ -22,13 +22,13 @@
 }
 
 @mixin mobile {
-  @media (max-width: $mobile) { 
+  @media (max-width: $mobile) {
     @content;
   }
 }
 
 .light {
-  @include theme($light-theme: true)
+  @include theme($light-theme: true);
 }
 
 body {
@@ -37,28 +37,28 @@ body {
 }
 
 .body-home {
-  background-image: url('../assets/home/background-home-desktop.jpg');
+  background-image: url("../assets/home/background-home-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .destination {
-  background-image: url('../assets/destination/background-destination-desktop.jpg');
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .crew {
-  background-image: url('../assets/crew/background-crew-desktop.jpg');
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .technology {
-  background-image: url('../assets/technology/background-technology-desktop.jpg');
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -90,7 +90,7 @@ nav {
     background-color: $text-color;
     z-index: 1;
     position: absolute;
-    left: 100px;
+    right: 800px;
   }
 
   .nav-links {
@@ -103,7 +103,7 @@ nav {
     backdrop-filter: blur(5px);
     justify-content: center;
     position: absolute;
-    left: 525px;
+    right: 0px;
   }
 }
 

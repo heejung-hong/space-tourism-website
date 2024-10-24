@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Space tourism website - Moon</title>
-  <link rel="stylesheet" href="./scss/main.css">
-  <script src="./script.js" defer></script>
-</head>
-<body class="destination">
-  <header>
-    <nav>
-      <div class="nav-container">
-        <img src="./assets/shared/logo.svg" alt="logo">
-        <div class="rectangle"></div>
-        <div class="nav-links">
-          <a class="nav-text" href="index.html"><b>00</b> HOME</a>
-          <a class="nav-text" href="./destination-moon.html"><b>01</b> DESTINATION</a>
-          <a class="nav-text" href="./crew-commander.html"><b>02</b> CREW</a>
-          <a class="nav-text" href="./technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <main class="main-moon">
-    <h5><span>01</span>&nbsp;&nbsp;PICK YOUR DESTINATION</h5>
-
-    <div class="container">
-      
-      <img id="desImage">
-      
-      <div class="info">
-        <div class="menu">
-          <div class="menu-text" onclick="moon()">MOON</div>
-          <div class="menu-text" onclick="mars()">MARS</div>
-          <div class="menu-text" onclick="europa()">EUROPA</div>
-          <div class="menu-text" onclick="titan()">TITAN</div>
-        </div>
-    
-        <h2 id="desName">MOON</h2>
-
-        <div class="body-text" id="description"></div>
-        <hr>
-        <div class="facts">
-          <div class="fact one">
-            <div class="subheading-2">AVG. DISTANCE</div>
-            <div class="subheading-1" id="distance"></div>
-          </div>
-          <div class="fact">
-            <div class="subheading-2">EST. TRAVEL TIME</div>
-            <div class="subheading-1" id="travel"></div>
+    <title>Space tourism website - Moon</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="destination">
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+          <div class="rectangle"></div>
+          <div class="nav-links">
+            <a class="nav-text" href="index.html"><b>00</b> HOME</a>
+            <a class="nav-text" href="./destination-moon.html"
+              ><b>01</b> DESTINATION</a
+            >
+            <a class="nav-text" href="./crew-commander.html"><b>02</b> CREW</a>
+            <a class="nav-text" href="./technology-vehicle.html"
+              ><b>03</b> TECHNOLOGY</a
+            >
           </div>
         </div>
+      </nav>
+    </header>
+
+    <main class="main-moon">
+      <h5><span>01</span>&nbsp;&nbsp;PICK YOUR DESTINATION</h5>
+
+      <div class="container">
+        <img id="desImage" />
+
+        <div class="info">
+          <div class="menu">
+            <div class="menu-text" onclick="moon()">MOON</div>
+            <div class="menu-text" onclick="mars()">MARS</div>
+            <div class="menu-text" onclick="europa()">EUROPA</div>
+            <div class="menu-text" onclick="titan()">TITAN</div>
+          </div>
+
+          <h2 id="desName">MOON</h2>
+
+          <div class="body-text" id="description"></div>
+          <hr />
+          <div class="facts">
+            <div class="fact one">
+              <div class="subheading-2">AVG. DISTANCE</div>
+              <div class="subheading-1" id="distance"></div>
+            </div>
+            <div class="fact">
+              <div class="subheading-2">EST. TRAVEL TIME</div>
+              <div class="subheading-1" id="travel"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </main>  
-</body>
+    </main>
+  </body>
 </html>
