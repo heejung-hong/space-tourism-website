@@ -61,6 +61,42 @@ fetch(
     vehicleActive();
   });
 
+function moonActive() {
+  document.querySelector("#moon").classList.remove("menu-text");
+  document.querySelector("#moon").classList.add("menu-text-active");
+}
+function moonNonActive() {
+  document.querySelector("#moon").classList.remove("menu-text-active");
+  document.querySelector("#moon").classList.add("menu-text");
+}
+
+function marsActive() {
+  document.querySelector("#mars").classList.remove("menu-text");
+  document.querySelector("#mars").classList.add("menu-text-active");
+}
+function marsNonActive() {
+  document.querySelector("#mars").classList.remove("menu-text-active");
+  document.querySelector("#mars").classList.add("menu-text");
+}
+
+function europaActive() {
+  document.querySelector("#europa").classList.remove("menu-text");
+  document.querySelector("#europa").classList.add("menu-text-active");
+}
+function europaNonActive() {
+  document.querySelector("#europa").classList.remove("menu-text-active");
+  document.querySelector("#europa").classList.add("menu-text");
+}
+
+function titanActive() {
+  document.querySelector("#titan").classList.remove("menu-text");
+  document.querySelector("#titan").classList.add("menu-text-active");
+}
+function titanNonActive() {
+  document.querySelector("#titan").classList.remove("menu-text-active");
+  document.querySelector("#titan").classList.add("menu-text");
+}
+
 function commanderActive() {
   document.querySelector("#dotsCommander").classList.remove("dots");
   document.querySelector("#dotsCommander").classList.add("dots-active");
@@ -137,6 +173,10 @@ async function moon() {
     data.destinations[0].distance.toUpperCase();
   document.querySelector("#travel").textContent =
     data.destinations[0].travel.toUpperCase();
+  moonActive();
+  marsNonActive();
+  europaNonActive();
+  titanNonActive();
 }
 
 async function mars() {
@@ -152,6 +192,10 @@ async function mars() {
     data.destinations[1].distance.toUpperCase();
   document.querySelector("#travel").textContent =
     data.destinations[1].travel.toUpperCase();
+  moonNonActive();
+  marsActive();
+  europaNonActive();
+  titanNonActive();
 }
 
 async function europa() {
@@ -167,6 +211,10 @@ async function europa() {
     data.destinations[2].distance.toUpperCase();
   document.querySelector("#travel").textContent =
     data.destinations[2].travel.toUpperCase();
+  moonNonActive();
+  marsNonActive();
+  europaActive();
+  titanNonActive();
 }
 
 async function titan() {
@@ -182,6 +230,10 @@ async function titan() {
     data.destinations[3].distance.toUpperCase();
   document.querySelector("#travel").textContent =
     data.destinations[3].travel.toUpperCase();
+  moonNonActive();
+  marsNonActive();
+  europaNonActive();
+  titanActive();
 }
 
 async function commander() {

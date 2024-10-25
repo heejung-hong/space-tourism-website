@@ -33,13 +33,35 @@
     margin: 0 0 30px 0;
   }
 
-  .menu-text {
+  .menu-text-active {
+    cursor: pointer;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     letter-spacing: 2.7px;
+    text-align: center;
+    padding-bottom: 25px;
     margin: 0 30px 0 0;
+    border-bottom: 4px solid white;
+  }
+
+  .menu-text {
+    cursor: pointer;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    padding-bottom: 25px;
+    margin: 0 30px 0 0;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+
+    &:hover {
+      color: #d0d6f9;
+      border-bottom: 4px solid #979797;
+    }
   }
 
   .body-text {

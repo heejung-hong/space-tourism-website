@@ -28,6 +28,7 @@
   line-height: 32px;
 }
 .main-home .explore-circle {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +36,12 @@
   height: 274px;
   background-color: #FFFFFF;
   border-radius: 50%;
-  align-self: flex-end;
+  text-decoration: none;
+}
+.main-home .explore-circle:hover {
+  outline-width: 88px;
+  outline-style: solid;
+  outline-color: rgba(255, 255, 255, 0.1);
 }
 .main-home .explore {
   font-family: "Bellefair", serif;
@@ -76,13 +82,33 @@
   display: flex;
   margin: 0 0 30px 0;
 }
-.main-moon .menu-text {
+.main-moon .menu-text-active {
+  cursor: pointer;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   letter-spacing: 2.7px;
+  text-align: center;
+  padding-bottom: 25px;
   margin: 0 30px 0 0;
+  border-bottom: 4px solid white;
+}
+.main-moon .menu-text {
+  cursor: pointer;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-align: center;
+  padding-bottom: 25px;
+  margin: 0 30px 0 0;
+  border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+.main-moon .menu-text:hover {
+  color: #d0d6f9;
+  border-bottom: 4px solid #979797;
 }
 .main-moon .body-text {
   font-family: "Barlow", sans-serif;
@@ -331,7 +357,7 @@ nav img {
 nav .rectangle {
   width: 473px;
   height: 1px;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.3);
   z-index: 1;
   position: absolute;
   right: 800px;
@@ -407,7 +433,23 @@ h5 {
   font-style: normal;
   font-size: 16px;
   letter-spacing: 2.7px;
-  margin: 0 30px 0 30px;
   color: white;
   text-decoration: none;
+}
+
+.nav-border-active {
+  height: 96px;
+  align-content: center;
+  border-bottom: 4px solid white;
+  margin: 0 30px 0 30px;
+}
+
+.nav-border {
+  height: 96px;
+  align-content: center;
+  border-bottom: 4px solid rgba(255, 255, 255, 0);
+  margin: 0 30px 0 30px;
+}
+.nav-border:hover {
+  border-bottom: 4px solid #979797;
 }
