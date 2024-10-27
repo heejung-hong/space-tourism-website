@@ -2,7 +2,7 @@
 @import "./resets"; // partial
 @import "./variables"; //partial
 @import "./home";
-@import "./moon";
+@import "./destination";
 @import "./crew";
 @import "./technology";
 
@@ -17,7 +17,7 @@
 @mixin theme($light-theme: true) {
   @if $light-theme {
     background: lighten($color-primary, 100%);
-    color: darken($text-color, 100%);
+    color: darken($color-tertiary, 100%);
   }
 }
 
@@ -33,50 +33,97 @@
 
 body {
   background: $color-primary;
-  color: $text-color;
+  color: $color-tertiary;
 }
 
-.body-home {
-  background-image: url("../assets/home/background-home-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.destination {
-  background-image: url("../assets/destination/background-destination-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.crew {
-  background-image: url("../assets/crew/background-crew-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
+.body-home,
+.destination,
+.crew,
 .technology {
-  background-image: url("../assets/technology/background-technology-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+.subheading-1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5,
+.subheading-2,
+.nav-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-size: 28px;
+  letter-spacing: 4.72px;
+}
+
+.subheading-1 {
+  font-size: 28px;
+}
+
+.subheading-2 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+@media screen and (min-width: 769px) {
+  .body-home {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+  }
+
+  .destination {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+  }
+
+  .crew {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+  }
+
+  .technology {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
 
   .nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     width: 1385px;
     height: 96px;
     margin-top: 55px;
-    position: relative;
   }
 
   img {
@@ -85,103 +132,118 @@ nav {
   }
 
   .rectangle {
+    position: absolute;
+    right: 800px;
+    z-index: 1;
     width: 473px;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
-    z-index: 1;
-    position: absolute;
-    right: 800px;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
     width: 830px;
     height: 96px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    justify-content: center;
-    position: absolute;
-    right: 0px;
+  }
+
+  .nav-border-active {
+    height: 96px;
+    align-content: center;
+    border-bottom: 4px solid $color-tertiary;
+    margin: 0 30px 0 30px;
+  }
+
+  .nav-border {
+    height: 96px;
+    align-content: center;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+    margin: 0 30px 0 30px;
+
+    &:hover {
+      border-bottom: 4px solid $color-quaternary;
+    }
+  }
+
+  .nav-text {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: $color-tertiary;
+    text-decoration: none;
   }
 }
 
-h1 {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 150px;
-}
+@media screen and (max-width: 768px) {
+  .body-home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
 
-h2 {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100px;
-}
+  .destination {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
 
-h3 {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 56px;
-}
+  .crew {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
 
-h4 {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
-}
+  .technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
 
-h5 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: 4.72px;
-}
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 729px;
+    height: 96px;
+  }
 
-.subheading-1 {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 28px;
-}
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    width: 450px;
+    height: 96px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+  }
 
-.subheading-2 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  letter-spacing: 2.35px;
-}
+  .nav-border-active {
+    height: 96px;
+    align-content: center;
+    border-bottom: 4px solid $color-tertiary;
+    margin: 0 20px 0 20px;
+  }
 
-.nav-text {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: 2.7px;
-  color: white;
-  text-decoration: none;
-}
+  .nav-border {
+    height: 96px;
+    align-content: center;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+    margin: 0 20px 0 20px;
 
-.nav-border-active {
-  height: 96px;
-  align-content: center;
-  border-bottom: 4px solid white;
-  margin: 0 30px 0 30px;
-}
+    &:hover {
+      border-bottom: 4px solid $color-quaternary;
+    }
+  }
 
-.nav-border {
-  height: 96px;
-  align-content: center;
-  border-bottom: 4px solid rgba(255, 255, 255, 0);
-  margin: 0 30px 0 30px;
+  .nav-text {
+    font-size: 14px;
+    letter-spacing: 2.7px;
+    color: $color-tertiary;
+    text-decoration: none;
 
-  &:hover {
-    border-bottom: 4px solid #979797;
+    b {
+      display: none;
+    }
   }
 }

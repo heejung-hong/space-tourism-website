@@ -1,14 +1,15 @@
-.main-home {
-  width: 100%;
-  height: 100%;
-  margin-top: 15%;
-  display: flex;
-  justify-content: space-around;
-
+@media screen and (min-width: 769px) {
+  .main-home {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+  }
   .container {
+    align-self: flex-end;
     width: 450px;
     height: 382px;
-    align-self: flex-end;
 
     h1 {
       margin: 20px 0 20px 0;
@@ -30,7 +31,7 @@
     justify-content: center;
     width: 274px;
     height: 274px;
-    background-color: $text-color;
+    background-color: $color-tertiary;
     border-radius: 50%;
     text-decoration: none;
 
@@ -41,12 +42,71 @@
     }
   }
 
-  .explore {
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
+  h4 {
     letter-spacing: 2px;
-    color: black;
+    color: $color-primary;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .main-home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+
+    .container {
+      width: 444px;
+      height: 382px;
+      margin: auto;
+
+      h5 {
+        font-size: 20px;
+        color: $color-secondary;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 20px 0 10px 0;
+      }
+
+      .body-text {
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: $color-secondary;
+        text-align: center;
+      }
+    }
+
+    .explore-circle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 242px;
+      height: 242px;
+      background-color: $color-tertiary;
+      border-radius: 50%;
+      text-decoration: none;
+      margin: 6% auto;
+
+      &:hover {
+        outline-width: 80px;
+        outline-style: solid;
+        outline-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    h4 {
+      letter-spacing: 2px;
+      color: $color-primary;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
 }

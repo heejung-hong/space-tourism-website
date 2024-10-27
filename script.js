@@ -55,9 +55,25 @@ fetch(
       data.technology[0].name.toUpperCase();
     document.querySelector("#techDescription").textContent =
       data.technology[0].description;
-    document.querySelector("#techImage").src =
-      data.technology[0].images.portrait;
+
+    function responsiveImage() {
+      const imageElement = document.querySelector("#techImage");
+
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        imageElement.src = data.technology[0].images.landscape;
+      } else {
+        imageElement.src = data.technology[0].images.portrait;
+      }
+    }
+    // Call the function initially to set the image based on the current screen size
+    responsiveImage();
+    // Add an event listener to update the image when the screen size changes
+    window
+      .matchMedia("(max-width: 768px)")
+      .addEventListener("change", responsiveImage);
+
     document.querySelector("#techImage").alt = "launch vehicle";
+
     vehicleActive();
   });
 
@@ -309,7 +325,23 @@ async function vehicle() {
     data.technology[0].name.toUpperCase();
   document.querySelector("#techDescription").textContent =
     data.technology[0].description;
-  document.querySelector("#techImage").src = data.technology[0].images.portrait;
+
+  function responsiveImage() {
+    const imageElement = document.querySelector("#techImage");
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      imageElement.src = data.technology[0].images.landscape;
+    } else {
+      imageElement.src = data.technology[0].images.portrait;
+    }
+  }
+  // Call the function initially to set the image based on the current screen size
+  responsiveImage();
+  // Add an event listener to update the image when the screen size changes
+  window
+    .matchMedia("(max-width: 768px)")
+    .addEventListener("change", responsiveImage);
+
   document.querySelector("#techImage").alt = "launch vehicle";
   vehicleActive();
   capsuleNonActive();
@@ -325,8 +357,24 @@ async function spaceport() {
     data.technology[1].name.toUpperCase();
   document.querySelector("#techDescription").textContent =
     data.technology[1].description;
-  document.querySelector("#techImage").src = data.technology[1].images.portrait;
-  document.querySelector("#techImage").alt = "launch vehicle";
+
+  function responsiveImage() {
+    const imageElement = document.querySelector("#techImage");
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      imageElement.src = data.technology[1].images.landscape;
+    } else {
+      imageElement.src = data.technology[1].images.portrait;
+    }
+  }
+  // Call the function initially to set the image based on the current screen size
+  responsiveImage();
+  // Add an event listener to update the image when the screen size changes
+  window
+    .matchMedia("(max-width: 768px)")
+    .addEventListener("change", responsiveImage);
+
+  document.querySelector("#techImage").alt = "spaceport";
   vehicleNonActive();
   spaceportActive();
   capsuleNonActive();
@@ -341,8 +389,24 @@ async function capsule() {
     data.technology[2].name.toUpperCase();
   document.querySelector("#techDescription").textContent =
     data.technology[2].description;
-  document.querySelector("#techImage").src = data.technology[2].images.portrait;
-  document.querySelector("#techImage").alt = "launch vehicle";
+
+  function responsiveImage() {
+    const imageElement = document.querySelector("#techImage");
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      imageElement.src = data.technology[2].images.landscape;
+    } else {
+      imageElement.src = data.technology[2].images.portrait;
+    }
+  }
+  // Call the function initially to set the image based on the current screen size
+  responsiveImage();
+  // Add an event listener to update the image when the screen size changes
+  window
+    .matchMedia("(max-width: 768px)")
+    .addEventListener("change", responsiveImage);
+
+  document.querySelector("#techImage").alt = "space capsule";
   vehicleNonActive();
   spaceportNonActive();
   capsuleActive();
