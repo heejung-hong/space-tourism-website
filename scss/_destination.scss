@@ -98,7 +98,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
   .main-moon {
     width: 100%;
     height: 100%;
@@ -207,6 +207,123 @@
     .subheading-1,
     .subheading-2 {
       margin: 15px 0 0 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-moon {
+    width: 100%;
+    height: 850px;
+
+    h5 {
+      text-align: center;
+      font-size: 16px;
+      span {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .container {
+      width: 327px;
+      height: 276px;
+      margin: auto;
+    }
+
+    img {
+      width: 170px;
+      height: 170px;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      width: 327px;
+      height: 472px;
+      margin: 250px auto 0 auto;
+    }
+
+    .menu {
+      display: flex;
+      width: 286px;
+      height: 34px;
+      margin: 0 auto 30px auto;
+    }
+
+    .menu-text-active {
+      cursor: pointer;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      letter-spacing: 2.7px;
+      text-align: center;
+      padding-bottom: 25px;
+      margin: 0 15px;
+      border-bottom: 4px solid $color-tertiary;
+    }
+
+    .menu-text {
+      cursor: pointer;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      letter-spacing: 2.7px;
+      text-align: center;
+      padding-bottom: 25px;
+      margin: 0 15px;
+      border-bottom: 4px solid rgba(255, 255, 255, 0);
+
+      &:hover {
+        color: $color-secondary;
+        border-bottom: 4px solid $color-quaternary;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 56px;
+    }
+
+    .body-text {
+      font-family: "Barlow", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 25px;
+      margin: 15px 0 50px 0;
+      text-align: center;
+    }
+
+    hr {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .facts {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .fact {
+      width: 143px;
+      height: 61px;
+      margin: 20px auto;
+    }
+
+    .one {
+      text-align: center;
+    }
+
+    .subheading-1,
+    .subheading-2 {
+      margin: 10px 0 0 0;
       text-align: center;
     }
   }

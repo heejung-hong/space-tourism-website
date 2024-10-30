@@ -126,6 +126,10 @@ nav {
     margin-top: 55px;
   }
 
+  i {
+    display: none;
+  }
+
   img {
     width: 48px;
     height: 48px;
@@ -179,7 +183,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
   .body-home {
     background-image: url("../assets/home/background-home-tablet.jpg");
   }
@@ -203,6 +207,10 @@ nav {
     position: relative;
     width: 729px;
     height: 96px;
+  }
+
+  i {
+    display: none;
   }
 
   .nav-links {
@@ -245,5 +253,99 @@ nav {
     b {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .body-home {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+  }
+
+  .destination {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+  }
+
+  .crew {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+  }
+
+  .technology {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 96px;
+  }
+
+  img {
+    position: absolute;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-open {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+  }
+
+  .icon-close {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 254px;
+    height: 667px;
+    padding: 100px 0 0 35px;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(30px);
+  }
+
+  .nav-border-active {
+    align-content: center;
+    width: 219px;
+    height: 30px;
+    border-right: 4px solid $color-tertiary;
+    margin: 10px 0 10px 0;
+  }
+
+  .nav-border {
+    align-content: center;
+    width: 219px;
+    height: 30px;
+    border-right: 4px solid rgba(255, 255, 255, 0);
+    margin: 10px 0 10px 0;
+
+    &:hover {
+      border-right: 4px solid $color-quaternary;
+    }
+  }
+
+  .nav-text {
+    font-size: 14px;
+    letter-spacing: 2.7px;
+    color: $color-tertiary;
+    text-decoration: none;
   }
 }
