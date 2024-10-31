@@ -1,26 +1,9 @@
-const closeBtn = document.querySelector(".icon-close");
-const openBtn = document.querySelector(".icon-open");
-const nav = document.querySelector(".nav-links");
-const aLinks = document.querySelectorAll(".nav-text");
-const linksActive = document.querySelector(".nav-border-active");
-const linksNonActive = document.querySelectorAll(".nav-border");
-
 function closeMenu() {
-  closeBtn.classList.remove("icon-close");
-  openBtn.classList.add("icon-open");
-  nav.classList.remove("nav-links");
-  aLinks.classList.remove("nav-text");
-  linksActive.classList.remove("nav-border-active");
-  linksNonActive.classList.remove("nav-border");
+  document.getElementById("navLinks").style.visibility = "hidden";
 }
 
 function openMenu() {
-  openBtn.classList.remove("icon-open");
-  closeBtn.classList.add("icon-close");
-  nav.classList.add("nav-links");
-  aLinks.classList.add("nav-text");
-  linksActive.classList.add("nav-border-active");
-  linksNonActive.classList.add("nav-border");
+  document.getElementById("navLinks").style.visibility = "visible";
 }
 
 /*

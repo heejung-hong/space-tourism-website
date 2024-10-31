@@ -100,6 +100,10 @@ nav {
 }
 
 @media screen and (min-width: 769px) {
+  i {
+    visibility: hidden;
+  }
+
   .body-home {
     background-image: url("../assets/home/background-home-desktop.jpg");
   }
@@ -124,10 +128,6 @@ nav {
     width: 1385px;
     height: 96px;
     margin-top: 55px;
-  }
-
-  i {
-    display: none;
   }
 
   img {
@@ -184,6 +184,10 @@ nav {
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  i {
+    visibility: hidden;
+  }
+
   .body-home {
     background-image: url("../assets/home/background-home-tablet.jpg");
   }
@@ -207,10 +211,6 @@ nav {
     position: relative;
     width: 729px;
     height: 96px;
-  }
-
-  i {
-    display: none;
   }
 
   .nav-links {
@@ -280,6 +280,7 @@ nav {
     position: relative;
     width: 100%;
     height: 96px;
+    z-index: 1;
   }
 
   img {
@@ -305,8 +306,8 @@ nav {
     font-size: 30px;
   }
 
-  .toggle {
-    display: none;
+  #navLinks {
+    visibility: hidden;
   }
 
   .nav-links {

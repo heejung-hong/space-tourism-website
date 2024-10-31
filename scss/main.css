@@ -5,12 +5,35 @@
   padding: 0;
 }
 
+.main-home {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.body-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.explore-circle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.explore-circle:hover {
+  outline-style: solid;
+  outline-color: rgba(255, 255, 255, 0.1);
+}
+
 @media screen and (min-width: 769px) {
   .main-home {
-    display: flex;
     justify-content: space-around;
-    width: 100%;
-    height: 100%;
     margin-top: 15%;
   }
   .container {
@@ -22,27 +45,15 @@
     margin: 20px 0 20px 0;
   }
   .container .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 18px;
     line-height: 32px;
   }
   .explore-circle {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 274px;
     height: 274px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    text-decoration: none;
   }
   .explore-circle:hover {
     outline-width: 88px;
-    outline-style: solid;
-    outline-color: rgba(255, 255, 255, 0.1);
   }
   h4 {
     letter-spacing: 2px;
@@ -51,105 +62,75 @@
 }
 @media screen and (min-width: 376px) and (max-width: 768px) {
   .main-home {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     margin-top: 15%;
   }
-  .main-home .container {
+  .container {
     width: 444px;
     height: 382px;
     margin: auto;
   }
-  .main-home .container h5 {
+  .container h5 {
     font-size: 20px;
     color: #d0d6f9;
     text-align: center;
   }
-  .main-home .container h1 {
+  .container h1 {
     margin: 20px 0 10px 0;
   }
-  .main-home .container .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  .container .body-text {
     font-size: 16px;
     line-height: 28px;
     color: #d0d6f9;
     text-align: center;
   }
-  .main-home .explore-circle {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .explore-circle {
     width: 242px;
     height: 242px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    text-decoration: none;
     margin: 6% auto;
   }
-  .main-home .explore-circle:hover {
+  .explore-circle:hover {
     outline-width: 80px;
-    outline-style: solid;
-    outline-color: rgba(255, 255, 255, 0.1);
   }
-  .main-home h4 {
+  h4 {
     letter-spacing: 2px;
     color: #0b0d17;
   }
 }
 @media screen and (max-width: 375px) {
   .main-home {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     margin-top: 10px;
   }
-  .main-home .container {
+  .container {
     width: 327px;
     height: 276px;
     margin: auto;
   }
-  .main-home .container h5 {
+  .container h5 {
     font-size: 16px;
     color: #d0d6f9;
     text-align: center;
   }
-  .main-home .container h1 {
+  .container h1 {
     font-size: 80px;
     text-align: center;
   }
-  .main-home .container .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  .container .body-text {
     font-size: 15px;
     line-height: 28px;
     color: #d0d6f9;
     text-align: center;
   }
-  .main-home .explore-circle {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .explore-circle {
     width: 150px;
     height: 150px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    text-decoration: none;
     margin: 90px auto 0 auto;
   }
-  .main-home .explore-circle:hover {
+  .explore-circle:hover {
     outline-width: 80px;
-    outline-style: solid;
-    outline-color: rgba(255, 255, 255, 0.1);
   }
-  .main-home h4 {
+  h4 {
     letter-spacing: 2px;
     color: #0b0d17;
   }
@@ -1043,6 +1024,9 @@ nav {
 }
 
 @media screen and (min-width: 769px) {
+  i {
+    visibility: hidden;
+  }
   .body-home {
     background-image: url("../assets/home/background-home-desktop.jpg");
   }
@@ -1063,9 +1047,6 @@ nav {
     width: 1385px;
     height: 96px;
     margin-top: 55px;
-  }
-  i {
-    display: none;
   }
   img {
     width: 48px;
@@ -1115,6 +1096,9 @@ nav {
   }
 }
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  i {
+    visibility: hidden;
+  }
   .body-home {
     background-image: url("../assets/home/background-home-tablet.jpg");
   }
@@ -1134,9 +1118,6 @@ nav {
     position: relative;
     width: 729px;
     height: 96px;
-  }
-  i {
-    display: none;
   }
   .nav-links {
     display: flex;
@@ -1196,6 +1177,7 @@ nav {
     position: relative;
     width: 100%;
     height: 96px;
+    z-index: 1;
   }
   img {
     position: absolute;
@@ -1217,8 +1199,8 @@ nav {
     right: 30px;
     font-size: 30px;
   }
-  .toggle {
-    display: none;
+  #navLinks {
+    visibility: hidden;
   }
   .nav-links {
     display: flex;
