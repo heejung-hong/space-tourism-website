@@ -1,26 +1,74 @@
-@media screen and (min-width: 769px) {
-  .main-technology {
-    width: 100%;
-    height: 100%;
-    position: relative;
+.main-technology {
+  h5 {
+    color: $color-tertiary;
 
-    h5 {
-      margin-top: 5%;
-      margin-left: 10%;
+    span {
+      opacity: 0.25;
+    }
+  }
 
-      span {
-        color: rgba(255, 255, 255, 0.3);
+  h4 {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .body-text {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .dots {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    align-content: center;
+    text-align: center;
+
+    h4 {
+      color: $color-tertiary;
+    }
+
+    &:hover {
+      border: 1px solid $color-tertiary;
+
+      h4 {
+        color: $color-tertiary;
       }
+    }
+  }
+
+  .dots-active {
+    cursor: pointer;
+    border: 1px solid $color-tertiary;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    align-content: center;
+    text-align: center;
+    background-color: $color-tertiary;
+
+    h4 {
+      color: $color-primary;
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .main-technology {
+    h5 {
+      margin-top: 80px;
+      margin-left: 12%;
     }
 
     .container {
-      width: 90%;
       display: flex;
-      margin-top: 3%;
       justify-content: space-between;
+      width: 88%;
+      height: 472px;
+      margin: 9% 0 0 12%;
       align-items: center;
-      position: absolute;
-      right: 0;
     }
 
     .info {
@@ -29,12 +77,9 @@
       display: flex;
     }
 
-    h4 {
-      color: rgba(255, 255, 255, 0.3);
-    }
-
     .nav-text {
       margin: 0 0 0 80px;
+      color: $color-secondary;
     }
 
     h3 {
@@ -43,9 +88,6 @@
     }
 
     .body-text {
-      font-family: "Barlow", sans-serif;
-      font-weight: 400;
-      font-style: normal;
       font-size: 18px;
       line-height: 32px;
       margin: 15px 0 0 80px;
@@ -58,68 +100,31 @@
     }
 
     .dots {
-      cursor: pointer;
       width: 80px;
       height: 80px;
       margin: 0 0 40px 0;
-      border: 1px solid $color-quaternary;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      align-content: center;
-      text-align: center;
-
-      h4 {
-        color: $color-tertiary;
-      }
-
-      &:hover {
-        background-color: $color-tertiary;
-
-        h4 {
-          color: $color-primary;
-        }
-      }
     }
 
     .dots-active {
-      cursor: pointer;
       width: 80px;
       height: 80px;
       margin: 0 0 40px 0;
-      border: 1px solid $color-tertiary;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      align-content: center;
-      text-align: center;
-      background-color: $color-tertiary;
-
-      h4 {
-        color: $color-primary;
-      }
     }
 
     img {
-      width: 515px;
+      width: auto;
       height: 527px;
     }
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   .main-technology {
-    width: 100%;
-    height: 100%;
-
     h5 {
       margin-top: 5%;
       margin-left: 10%;
       font-size: 20px;
-
-      span {
-        color: rgba(255, 255, 255, 0.3);
-      }
+      letter-spacing: 3.38px;
     }
 
     .container {
@@ -128,11 +133,7 @@
       justify-content: center;
       display: flex;
       flex-direction: column-reverse;
-    }
-
-    img {
-      width: 768px;
-      height: 310px;
+      margin: auto;
     }
 
     .info {
@@ -142,62 +143,12 @@
       flex-direction: column;
     }
 
-    h4 {
-      color: rgba(255, 255, 255, 0.3);
-    }
-
-    .dots-menu {
-      display: flex;
-      margin: 50px auto;
-    }
-
-    .dots {
-      cursor: pointer;
-      width: 60px;
-      height: 60px;
-      margin: 0 10px;
-      border: 1px solid $color-quaternary;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      align-content: center;
-      text-align: center;
-
-      h4 {
-        color: $color-tertiary;
-        font-size: 24px;
-      }
-
-      &:hover {
-        background-color: $color-tertiary;
-
-        h4 {
-          color: $color-primary;
-        }
-      }
-    }
-
-    .dots-active {
-      cursor: pointer;
-      width: 60px;
-      height: 60px;
-      margin: 0 10px;
-      border: 1px solid $color-tertiary;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      align-content: center;
-      text-align: center;
-      background-color: $color-tertiary;
-
-      h4 {
-        color: $color-primary;
-      }
-    }
-
     .nav-text {
       margin: auto;
       text-align: center;
+      font-size: 16px;
+      letter-spacing: 2.7px;
+      color: $color-secondary;
     }
 
     h3 {
@@ -208,30 +159,55 @@
     }
 
     .body-text {
-      font-family: "Barlow", sans-serif;
-      font-weight: 400;
-      font-style: normal;
       font-size: 16px;
       line-height: 28px;
       margin: auto;
       text-align: center;
       width: 454px;
     }
+
+    .dots-menu {
+      display: flex;
+      margin: 50px auto;
+    }
+
+    .dots {
+      width: 60px;
+      height: 60px;
+      margin: 0 10px;
+
+      h4 {
+        font-size: 24px;
+      }
+
+      h4 {
+        font-size: 24px;
+      }
+    }
+
+    .dots-active {
+      width: 60px;
+      height: 60px;
+      margin: 0 10px;
+
+      h4 {
+        font-size: 24px;
+      }
+    }
+
+    img {
+      width: 768px;
+      height: 310px;
+    }
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .main-technology {
-    width: 100%;
-    height: 700px;
-
     h5 {
       text-align: center;
       font-size: 16px;
-
-      span {
-        color: rgba(255, 255, 255, 0.3);
-      }
+      letter-spacing: 2.7px;
     }
 
     .container {
@@ -239,15 +215,6 @@
       height: 682px;
       margin: auto;
       justify-items: center;
-    }
-
-    img {
-      width: 100%;
-      height: 170px;
-      position: absolute;
-      top: 150px;
-      left: 50%;
-      transform: translate(-50%, 0%);
     }
 
     .info {
@@ -262,63 +229,12 @@
       transform: translate(-50%, 0%);
     }
 
-    h4 {
-      color: rgba(255, 255, 255, 0.3);
-    }
-
-    .dots-menu {
-      display: flex;
-      margin: 15px auto 35px auto;
-    }
-
-    .dots {
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      margin: 0 10px;
-      border: 1px solid $color-quaternary;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      align-content: center;
-      text-align: center;
-
-      h4 {
-        color: $color-tertiary;
-        font-size: 16px;
-      }
-
-      &:hover {
-        background-color: $color-tertiary;
-
-        h4 {
-          color: $color-primary;
-        }
-      }
-    }
-
-    .dots-active {
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      margin: 0 10px;
-      border: 1px solid $color-tertiary;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      align-content: center;
-      text-align: center;
-      background-color: $color-tertiary;
-
-      h4 {
-        font-size: 16px;
-        color: $color-primary;
-      }
-    }
-
     .nav-text {
       margin: auto;
       text-align: center;
+      color: $color-secondary;
+      font-size: 14px;
+      letter-spacing: 2.36px;
     }
 
     h3 {
@@ -329,14 +245,45 @@
     }
 
     .body-text {
-      font-family: "Barlow", sans-serif;
-      font-weight: 400;
-      font-style: normal;
       font-size: 15px;
       line-height: 25px;
       margin: auto;
       text-align: center;
       width: 327px;
+    }
+
+    .dots-menu {
+      display: flex;
+      margin: 15px auto 35px auto;
+    }
+
+    .dots {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+
+      h4 {
+        font-size: 16px;
+      }
+    }
+
+    .dots-active {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+
+      h4 {
+        font-size: 16px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 170px;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translate(-50%, 0%);
     }
   }
 }

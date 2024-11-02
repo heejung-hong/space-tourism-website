@@ -8,6 +8,7 @@
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: $color-secondary;
 }
 
 .explore-circle {
@@ -25,128 +26,140 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+h5 {
+  color: $color-secondary;
+}
+
+@media screen and (min-width: 1441px) {
   .main-home {
     justify-content: space-around;
     margin-top: 15%;
-  }
 
-  .container {
-    align-self: flex-end;
-    width: 450px;
-    height: 382px;
+    .container {
+      align-self: flex-end;
+      width: 450px;
+      height: 382px;
 
-    h1 {
-      margin: 20px 0 20px 0;
+      h1 {
+        margin: 20px 0 20px 0;
+      }
+
+      .body-text {
+        font-size: 18px;
+        line-height: 32px;
+      }
     }
 
-    .body-text {
-      font-size: 18px;
-      line-height: 32px;
+    .explore-box {
+      align-content: flex-end;
     }
-  }
 
-  .explore-circle {
-    width: 274px;
-    height: 274px;
+    .explore-circle {
+      width: 274px;
+      height: 274px;
 
-    &:hover {
-      outline-width: 88px;
+      &:hover {
+        outline-width: 88px;
+      }
     }
-  }
 
-  h4 {
-    letter-spacing: 2px;
-    color: $color-primary;
+    h4 {
+      letter-spacing: 2px;
+      color: $color-primary;
+    }
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   .main-home {
     flex-direction: column;
     margin-top: 15%;
-  }
 
-  .container {
-    width: 444px;
-    height: 382px;
-    margin: auto;
+    .container {
+      width: 444px;
+      height: 382px;
+      margin: auto;
 
-    h5 {
-      font-size: 20px;
-      color: $color-secondary;
-      text-align: center;
+      h5 {
+        font-size: 20px;
+        color: $color-secondary;
+        text-align: center;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px auto 10px auto;
+      }
+
+      .body-text {
+        font-size: 16px;
+        line-height: 28px;
+        color: $color-secondary;
+        text-align: center;
+      }
     }
 
-    h1 {
-      margin: 20px 0 10px 0;
+    .explore-circle {
+      width: 242px;
+      height: 242px;
+      margin: 6% auto;
+
+      &:hover {
+        outline-width: 80px;
+      }
     }
 
-    .body-text {
-      font-size: 16px;
-      line-height: 28px;
-      color: $color-secondary;
-      text-align: center;
+    h4 {
+      letter-spacing: 2px;
+      color: $color-primary;
     }
-  }
-
-  .explore-circle {
-    width: 242px;
-    height: 242px;
-    margin: 6% auto;
-
-    &:hover {
-      outline-width: 80px;
-    }
-  }
-
-  h4 {
-    letter-spacing: 2px;
-    color: $color-primary;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .main-home {
     flex-direction: column;
     margin-top: 10px;
-  }
-  .container {
-    width: 327px;
-    height: 276px;
-    margin: auto;
 
-    h5 {
-      font-size: 16px;
-      color: $color-secondary;
-      text-align: center;
+    .container {
+      width: 327px;
+      height: 276px;
+      margin: auto;
+
+      h5 {
+        font-size: 16px;
+        color: $color-secondary;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 80px;
+        margin: 30px auto 40px auto;
+        text-align: center;
+      }
+
+      .body-text {
+        font-size: 15px;
+        line-height: 28px;
+        color: $color-secondary;
+        text-align: center;
+      }
     }
 
-    h1 {
-      font-size: 80px;
-      text-align: center;
+    .explore-circle {
+      width: 150px;
+      height: 150px;
+      margin: 90px auto 0 auto;
+
+      &:hover {
+        outline-width: 60px;
+      }
     }
 
-    .body-text {
-      font-size: 15px;
-      line-height: 28px;
-      color: $color-secondary;
-      text-align: center;
+    h4 {
+      font-size: 20px;
+      letter-spacing: 1.25px;
+      color: $color-primary;
     }
-  }
-
-  .explore-circle {
-    width: 150px;
-    height: 150px;
-    margin: 90px auto 0 auto;
-
-    &:hover {
-      outline-width: 80px;
-    }
-  }
-
-  h4 {
-    letter-spacing: 2px;
-    color: $color-primary;
   }
 }

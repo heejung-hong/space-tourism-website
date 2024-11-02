@@ -99,7 +99,7 @@ nav {
   justify-content: flex-end;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1441px) {
   i {
     visibility: hidden;
   }
@@ -141,7 +141,7 @@ nav {
     z-index: 1;
     width: 473px;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.25);
   }
 
   .nav-links {
@@ -183,7 +183,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   i {
     visibility: hidden;
   }
@@ -209,8 +209,13 @@ nav {
     flex-direction: row;
     align-items: center;
     position: relative;
-    width: 729px;
+    width: 95%;
     height: 96px;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
   }
 
   .nav-links {
@@ -256,7 +261,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .body-home {
     background-image: url("../assets/home/background-home-mobile.jpg");
   }

@@ -67,7 +67,7 @@ fetch(
     function responsiveImage() {
       const imageElement = document.querySelector("#techImage");
 
-      if (window.matchMedia("(max-width: 768px)").matches) {
+      if (window.matchMedia("(max-width: 1440px)").matches) {
         imageElement.src = data.technology[0].images.landscape;
       } else {
         imageElement.src = data.technology[0].images.portrait;
@@ -77,7 +77,7 @@ fetch(
     responsiveImage();
     // Add an event listener to update the image when the screen size changes
     window
-      .matchMedia("(max-width: 768px)")
+      .matchMedia("(max-width: 1440px)")
       .addEventListener("change", responsiveImage);
 
     document.querySelector("#techImage").alt = "launch vehicle";
@@ -337,7 +337,7 @@ async function vehicle() {
   function responsiveImage() {
     const imageElement = document.querySelector("#techImage");
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 1440px)").matches) {
       imageElement.src = data.technology[0].images.landscape;
     } else {
       imageElement.src = data.technology[0].images.portrait;
@@ -347,7 +347,7 @@ async function vehicle() {
   responsiveImage();
   // Add an event listener to update the image when the screen size changes
   window
-    .matchMedia("(max-width: 768px)")
+    .matchMedia("(max-width: 1440px)")
     .addEventListener("change", responsiveImage);
 
   document.querySelector("#techImage").alt = "launch vehicle";
@@ -369,7 +369,7 @@ async function spaceport() {
   function responsiveImage() {
     const imageElement = document.querySelector("#techImage");
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 1440px)").matches) {
       imageElement.src = data.technology[1].images.landscape;
     } else {
       imageElement.src = data.technology[1].images.portrait;
@@ -379,7 +379,7 @@ async function spaceport() {
   responsiveImage();
   // Add an event listener to update the image when the screen size changes
   window
-    .matchMedia("(max-width: 768px)")
+    .matchMedia("(max-width: 1440px)")
     .addEventListener("change", responsiveImage);
 
   document.querySelector("#techImage").alt = "spaceport";
@@ -401,7 +401,7 @@ async function capsule() {
   function responsiveImage() {
     const imageElement = document.querySelector("#techImage");
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 1440px)").matches) {
       imageElement.src = data.technology[2].images.landscape;
     } else {
       imageElement.src = data.technology[2].images.portrait;
@@ -411,7 +411,7 @@ async function capsule() {
   responsiveImage();
   // Add an event listener to update the image when the screen size changes
   window
-    .matchMedia("(max-width: 768px)")
+    .matchMedia("(max-width: 1440px)")
     .addEventListener("change", responsiveImage);
 
   document.querySelector("#techImage").alt = "space capsule";

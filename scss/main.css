@@ -15,6 +15,7 @@
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #d0d6f9;
 }
 
 .explore-circle {
@@ -31,207 +32,228 @@
   outline-color: rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (min-width: 769px) {
+h5 {
+  color: #d0d6f9;
+}
+
+@media screen and (min-width: 1441px) {
   .main-home {
     justify-content: space-around;
     margin-top: 15%;
   }
-  .container {
+  .main-home .container {
     align-self: flex-end;
     width: 450px;
     height: 382px;
   }
-  .container h1 {
+  .main-home .container h1 {
     margin: 20px 0 20px 0;
   }
-  .container .body-text {
+  .main-home .container .body-text {
     font-size: 18px;
     line-height: 32px;
   }
-  .explore-circle {
+  .main-home .explore-box {
+    align-content: flex-end;
+  }
+  .main-home .explore-circle {
     width: 274px;
     height: 274px;
   }
-  .explore-circle:hover {
+  .main-home .explore-circle:hover {
     outline-width: 88px;
   }
-  h4 {
+  .main-home h4 {
     letter-spacing: 2px;
     color: #0b0d17;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   .main-home {
     flex-direction: column;
     margin-top: 15%;
   }
-  .container {
+  .main-home .container {
     width: 444px;
     height: 382px;
     margin: auto;
   }
-  .container h5 {
+  .main-home .container h5 {
     font-size: 20px;
     color: #d0d6f9;
     text-align: center;
   }
-  .container h1 {
-    margin: 20px 0 10px 0;
+  .main-home .container h1 {
+    text-align: center;
+    margin: 20px auto 10px auto;
   }
-  .container .body-text {
+  .main-home .container .body-text {
     font-size: 16px;
     line-height: 28px;
     color: #d0d6f9;
     text-align: center;
   }
-  .explore-circle {
+  .main-home .explore-circle {
     width: 242px;
     height: 242px;
     margin: 6% auto;
   }
-  .explore-circle:hover {
+  .main-home .explore-circle:hover {
     outline-width: 80px;
   }
-  h4 {
+  .main-home h4 {
     letter-spacing: 2px;
     color: #0b0d17;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .main-home {
     flex-direction: column;
     margin-top: 10px;
   }
-  .container {
+  .main-home .container {
     width: 327px;
     height: 276px;
     margin: auto;
   }
-  .container h5 {
+  .main-home .container h5 {
     font-size: 16px;
     color: #d0d6f9;
     text-align: center;
   }
-  .container h1 {
+  .main-home .container h1 {
     font-size: 80px;
+    margin: 30px auto 40px auto;
     text-align: center;
   }
-  .container .body-text {
+  .main-home .container .body-text {
     font-size: 15px;
     line-height: 28px;
     color: #d0d6f9;
     text-align: center;
   }
-  .explore-circle {
+  .main-home .explore-circle {
     width: 150px;
     height: 150px;
     margin: 90px auto 0 auto;
   }
-  .explore-circle:hover {
-    outline-width: 80px;
+  .main-home .explore-circle:hover {
+    outline-width: 60px;
   }
-  h4 {
-    letter-spacing: 2px;
+  .main-home h4 {
+    font-size: 20px;
+    letter-spacing: 1.25px;
     color: #0b0d17;
   }
 }
-@media screen and (min-width: 769px) {
-  .main-moon {
-    width: 100%;
-    height: 100%;
-  }
+.main-moon h5 {
+  color: #ffffff;
+}
+.main-moon h5 span {
+  opacity: 0.25;
+}
+.main-moon .info {
+  display: flex;
+  flex-direction: column;
+}
+.main-moon .menu {
+  display: flex;
+  width: 286px;
+  height: 34px;
+}
+.main-moon .menu-text-active {
+  cursor: pointer;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2.7px;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 4px solid #ffffff;
+}
+.main-moon .menu-text {
+  cursor: pointer;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2.7px;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0);
+  color: #d0d6f9;
+}
+.main-moon .menu-text:hover {
+  color: #d0d6f9;
+  border-bottom: 4px solid #979797;
+}
+.main-moon .body-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 15px 0 50px 0;
+}
+.main-moon hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main-moon .subheading-2 {
+  color: #d0d6f9;
+}
+
+@media screen and (min-width: 1441px) {
   .main-moon h5 {
-    margin-top: 5%;
-    margin-left: 10%;
+    margin-top: 80px;
+    margin-left: 12%;
   }
   .main-moon .container {
     display: flex;
     justify-content: space-around;
-    width: 90%;
-    margin: 7% auto;
+    width: 83%;
+    height: 472px;
+    margin: 9% 5% 0 12%;
   }
   .main-moon img {
     width: 445px;
     height: 445px;
+    align-self: flex-end;
   }
   .main-moon .info {
-    display: flex;
-    flex-direction: column;
     width: 445px;
     height: 472px;
   }
   .main-moon .menu {
-    display: flex;
-    width: 286px;
-    height: 34px;
     margin: 0 0 30px 0;
   }
   .main-moon .menu-text-active {
-    cursor: pointer;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
-    letter-spacing: 2.7px;
-    text-align: center;
-    padding-bottom: 25px;
     margin: 0 30px 0 0;
-    border-bottom: 4px solid #ffffff;
   }
   .main-moon .menu-text {
-    cursor: pointer;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
-    letter-spacing: 2.7px;
-    text-align: center;
-    padding-bottom: 25px;
     margin: 0 30px 0 0;
-    border-bottom: 4px solid rgba(255, 255, 255, 0);
-  }
-  .main-moon .menu-text:hover {
-    color: #d0d6f9;
-    border-bottom: 4px solid #979797;
   }
   .main-moon .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 18px;
     line-height: 32px;
-    margin: 15px 0 50px 0;
-  }
-  .main-moon hr {
-    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .main-moon .facts {
     display: flex;
     margin: 30px 0 0 0;
   }
   .main-moon .fact {
-    width: 143px;
+    width: 200px;
     height: 61px;
-  }
-  .main-moon .one {
-    margin: 0 100px 0 0;
+    margin: 0 20px 0 0;
   }
   .main-moon .subheading-1 {
     margin: 15px 0 0 0;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 768px) {
-  .main-moon {
-    width: 100%;
-    height: 100%;
-  }
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   .main-moon h5 {
     margin-top: 5%;
     margin-left: 10%;
     font-size: 20px;
-  }
-  .main-moon h5 span {
-    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 3.38px;
   }
   .main-moon .container {
     width: 573px;
@@ -245,71 +267,37 @@
     margin: 40px auto;
   }
   .main-moon .info {
-    display: flex;
-    flex-direction: column;
     width: 573px;
     height: 472px;
   }
   .main-moon .menu {
-    display: flex;
-    width: 286px;
-    height: 34px;
     margin: 0 auto 30px auto;
   }
   .main-moon .menu-text-active {
-    cursor: pointer;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
-    letter-spacing: 2.7px;
-    text-align: center;
-    padding-bottom: 25px;
     margin: 0 30px 0 0;
-    border-bottom: 4px solid #ffffff;
   }
   .main-moon .menu-text {
-    cursor: pointer;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
-    letter-spacing: 2.7px;
-    text-align: center;
-    padding-bottom: 25px;
     margin: 0 30px 0 0;
-    border-bottom: 4px solid rgba(255, 255, 255, 0);
-  }
-  .main-moon .menu-text:hover {
-    color: #d0d6f9;
-    border-bottom: 4px solid #979797;
   }
   .main-moon h2 {
     text-align: center;
     font-size: 80px;
   }
   .main-moon .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     line-height: 28px;
-    margin: 15px 0 50px 0;
     text-align: center;
-  }
-  .main-moon hr {
-    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .main-moon .facts {
     display: flex;
     margin: 20px auto 0 auto;
   }
   .main-moon .fact {
-    width: 143px;
+    width: 170px;
     height: 61px;
     margin: 0 40px;
-  }
-  .main-moon .one {
     text-align: center;
   }
   .main-moon .subheading-1,
@@ -318,17 +306,11 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 375px) {
-  .main-moon {
-    width: 100%;
-    height: 850px;
-  }
+@media screen and (max-width: 430px) {
   .main-moon h5 {
     text-align: center;
     font-size: 16px;
-  }
-  .main-moon h5 span {
-    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 2.7px;
   }
   .main-moon .container {
     width: 327px;
@@ -344,61 +326,29 @@
     transform: translate(-50%, 0%);
   }
   .main-moon .info {
-    display: flex;
-    flex-direction: column;
     width: 327px;
     height: 472px;
     margin: 250px auto 0 auto;
   }
   .main-moon .menu {
-    display: flex;
-    width: 286px;
-    height: 34px;
     margin: 0 auto 30px auto;
   }
   .main-moon .menu-text-active {
-    cursor: pointer;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 14px;
-    letter-spacing: 2.7px;
-    text-align: center;
-    padding-bottom: 25px;
     margin: 0 15px;
-    border-bottom: 4px solid #ffffff;
   }
   .main-moon .menu-text {
-    cursor: pointer;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 14px;
-    letter-spacing: 2.7px;
-    text-align: center;
-    padding-bottom: 25px;
     margin: 0 15px;
-    border-bottom: 4px solid rgba(255, 255, 255, 0);
-  }
-  .main-moon .menu-text:hover {
-    color: #d0d6f9;
-    border-bottom: 4px solid #979797;
   }
   .main-moon h2 {
     text-align: center;
     font-size: 56px;
   }
   .main-moon .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 15px;
     line-height: 25px;
-    margin: 15px 0 50px 0;
     text-align: center;
-  }
-  .main-moon hr {
-    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .main-moon .facts {
     display: flex;
@@ -406,105 +356,102 @@
     margin: auto;
   }
   .main-moon .fact {
-    width: 143px;
+    width: 200px;
     height: 61px;
     margin: 20px auto;
   }
-  .main-moon .one {
-    text-align: center;
-  }
   .main-moon .subheading-1,
   .main-moon .subheading-2 {
-    margin: 10px 0 0 0;
+    margin: 15px auto;
     text-align: center;
   }
 }
-@media screen and (min-width: 769px) {
-  .main-crew {
-    width: 100%;
-    height: 100%;
-  }
+.main-crew h5 {
+  color: #ffffff;
+}
+.main-crew h5 span {
+  opacity: 0.25;
+}
+.main-crew .info {
+  display: flex;
+  flex-direction: column;
+}
+.main-crew h4 {
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.main-crew .body-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-crew .dots {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.17);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.main-crew .dots:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.main-crew .dots-active {
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (min-width: 1441px) {
   .main-crew h5 {
-    margin-top: 5%;
-    margin-left: 10%;
+    margin-top: 80px;
+    margin-left: 12%;
   }
   .main-crew .container {
-    width: 90%;
     display: flex;
-    margin: 5% auto 0 10%;
+    justify-content: space-between;
+    width: 80%;
+    height: 472px;
+    margin: 9% 8% 0 12%;
   }
   .main-crew .info {
-    width: 50%;
-    height: 472px;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-crew h5 {
-    margin: 0 0 150px 0;
-  }
-  .main-crew h5 span {
-    color: rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-  .main-crew h4 {
-    color: rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    width: 614px;
+    height: 400px;
   }
   .main-crew h3 {
     margin: 20px 0;
   }
   .main-crew .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 18px;
     line-height: 32px;
     margin: 15px 0 100px 0;
     width: 444px;
   }
   .main-crew .dots {
-    cursor: pointer;
     width: 15px;
     height: 15px;
     margin: 0 20px 0 0;
-    background-color: #979797;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .main-crew .dots:hover {
-    background-color: #ffffff;
   }
   .main-crew .dots-active {
-    cursor: pointer;
     width: 15px;
     height: 15px;
     margin: 0 20px 0 0;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
   }
   .main-crew img {
-    width: 500px;
-    height: 75%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 0 5% 0 0;
+    width: auto;
+    height: 660px;
+    position: relative;
+    bottom: 35%;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 768px) {
-  .main-crew {
-    width: 100%;
-    height: 100%;
-  }
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   .main-crew h5 {
     margin-top: 5%;
     margin-left: 10%;
     font-size: 20px;
+    letter-spacing: 3.38px;
   }
   .main-crew .container {
     width: 573px;
@@ -515,14 +462,9 @@
   .main-crew .info {
     width: 458px;
     height: 232px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
   }
   .main-crew h4 {
-    color: rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
     font-size: 24px;
     margin: 40px 0 0 0;
   }
@@ -531,55 +473,36 @@
     font-size: 40px;
   }
   .main-crew .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     line-height: 28px;
     margin: 15px 0 30px 0;
     width: 444px;
   }
   .main-crew .dots {
-    cursor: pointer;
     width: 10px;
     height: 10px;
     margin: 0 20px 0 0;
-    background-color: #979797;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .main-crew .dots:hover {
-    background-color: #ffffff;
   }
   .main-crew .dots-active {
-    cursor: pointer;
     width: 10px;
     height: 10px;
     margin: 0 20px 0 0;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
   }
   .main-crew img {
+    width: auto;
     height: 525px;
     position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
     bottom: 0;
     margin: 5% auto 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
-  .main-crew {
-    width: 100%;
-    height: 710px;
-  }
+@media screen and (max-width: 430px) {
   .main-crew h5 {
     text-align: center;
     font-size: 16px;
-  }
-  .main-crew h5 span {
-    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 2.7px;
   }
   .main-crew .container {
     width: 375px;
@@ -590,30 +513,22 @@
   .main-crew .info {
     width: 327px;
     height: 232px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     position: absolute;
-    top: 450px;
+    top: 374px;
     left: 50%;
     transform: translate(-50%, 0%);
   }
   .main-crew h4 {
-    color: rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
     font-size: 16px;
-    margin: 60px 0 0 0;
+    margin: 80px 0 0 0;
   }
   .main-crew h3 {
     margin: 10px 0 0 0;
     font-size: 24px;
   }
   .main-crew .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 15px;
     line-height: 25px;
     margin: 15px auto;
@@ -622,83 +537,102 @@
   }
   .main-crew .dots-menu {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, 0%);
   }
   .main-crew .dots {
-    cursor: pointer;
     width: 10px;
     height: 10px;
     margin: 0 7px 0 7px;
-    background-color: #979797;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .main-crew .dots:hover {
-    background-color: #ffffff;
   }
   .main-crew .dots-active {
-    cursor: pointer;
     width: 10px;
     height: 10px;
     margin: 0 7px 0 7px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
   }
   .main-crew img {
-    width: 55%;
-    height: 45%;
+    width: auto;
+    height: 223px;
     position: absolute;
     top: 150px;
     left: 50%;
     transform: translate(-50%, 0%);
   }
 }
-@media screen and (min-width: 769px) {
-  .main-technology {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
+.main-technology h5 {
+  color: #ffffff;
+}
+.main-technology h5 span {
+  opacity: 0.25;
+}
+.main-technology h4 {
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-technology .body-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-technology .dots {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  align-content: center;
+  text-align: center;
+}
+.main-technology .dots h4 {
+  color: #ffffff;
+}
+.main-technology .dots:hover {
+  border: 1px solid #ffffff;
+}
+.main-technology .dots:hover h4 {
+  color: #ffffff;
+}
+.main-technology .dots-active {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+.main-technology .dots-active h4 {
+  color: #0b0d17;
+}
+
+@media screen and (min-width: 1441px) {
   .main-technology h5 {
-    margin-top: 5%;
-    margin-left: 10%;
-  }
-  .main-technology h5 span {
-    color: rgba(255, 255, 255, 0.3);
+    margin-top: 80px;
+    margin-left: 12%;
   }
   .main-technology .container {
-    width: 90%;
     display: flex;
-    margin-top: 3%;
     justify-content: space-between;
+    width: 88%;
+    height: 472px;
+    margin: 9% 0 0 12%;
     align-items: center;
-    position: absolute;
-    right: 0;
   }
   .main-technology .info {
     width: 488px;
     height: 350px;
     display: flex;
   }
-  .main-technology h4 {
-    color: rgba(255, 255, 255, 0.3);
-  }
   .main-technology .nav-text {
     margin: 0 0 0 80px;
+    color: #d0d6f9;
   }
   .main-technology h3 {
     margin: 20px 0 0 80px;
     width: 488px;
   }
   .main-technology .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 18px;
     line-height: 32px;
     margin: 15px 0 0 80px;
@@ -709,59 +643,26 @@
     flex-direction: column;
   }
   .main-technology .dots {
-    cursor: pointer;
     width: 80px;
     height: 80px;
     margin: 0 0 40px 0;
-    border: 1px solid #979797;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    align-content: center;
-    text-align: center;
-  }
-  .main-technology .dots h4 {
-    color: #ffffff;
-  }
-  .main-technology .dots:hover {
-    background-color: #ffffff;
-  }
-  .main-technology .dots:hover h4 {
-    color: #0b0d17;
   }
   .main-technology .dots-active {
-    cursor: pointer;
     width: 80px;
     height: 80px;
     margin: 0 0 40px 0;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    align-content: center;
-    text-align: center;
-    background-color: #ffffff;
-  }
-  .main-technology .dots-active h4 {
-    color: #0b0d17;
   }
   .main-technology img {
-    width: 515px;
+    width: auto;
     height: 527px;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 768px) {
-  .main-technology {
-    width: 100%;
-    height: 100%;
-  }
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   .main-technology h5 {
     margin-top: 5%;
     margin-left: 10%;
     font-size: 20px;
-  }
-  .main-technology h5 span {
-    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 3.38px;
   }
   .main-technology .container {
     width: 768px;
@@ -769,10 +670,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column-reverse;
-  }
-  .main-technology img {
-    width: 768px;
-    height: 310px;
+    margin: auto;
   }
   .main-technology .info {
     width: 768px;
@@ -780,54 +678,12 @@
     display: flex;
     flex-direction: column;
   }
-  .main-technology h4 {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  .main-technology .dots-menu {
-    display: flex;
-    margin: 50px auto;
-  }
-  .main-technology .dots {
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    margin: 0 10px;
-    border: 1px solid #979797;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    align-content: center;
-    text-align: center;
-  }
-  .main-technology .dots h4 {
-    color: #ffffff;
-    font-size: 24px;
-  }
-  .main-technology .dots:hover {
-    background-color: #ffffff;
-  }
-  .main-technology .dots:hover h4 {
-    color: #0b0d17;
-  }
-  .main-technology .dots-active {
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    margin: 0 10px;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    align-content: center;
-    text-align: center;
-    background-color: #ffffff;
-  }
-  .main-technology .dots-active h4 {
-    color: #0b0d17;
-  }
   .main-technology .nav-text {
     margin: auto;
     text-align: center;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
   }
   .main-technology h3 {
     margin: 20px auto 25px auto;
@@ -836,41 +692,51 @@
     font-size: 40px;
   }
   .main-technology .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     line-height: 28px;
     margin: auto;
     text-align: center;
     width: 454px;
   }
-}
-@media screen and (max-width: 375px) {
-  .main-technology {
-    width: 100%;
-    height: 700px;
+  .main-technology .dots-menu {
+    display: flex;
+    margin: 50px auto;
   }
+  .main-technology .dots {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .main-technology .dots h4 {
+    font-size: 24px;
+  }
+  .main-technology .dots h4 {
+    font-size: 24px;
+  }
+  .main-technology .dots-active {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .main-technology .dots-active h4 {
+    font-size: 24px;
+  }
+  .main-technology img {
+    width: 768px;
+    height: 310px;
+  }
+}
+@media screen and (max-width: 430px) {
   .main-technology h5 {
     text-align: center;
     font-size: 16px;
-  }
-  .main-technology h5 span {
-    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 2.7px;
   }
   .main-technology .container {
     width: 375px;
     height: 682px;
     margin: auto;
     justify-items: center;
-  }
-  .main-technology img {
-    width: 100%;
-    height: 170px;
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translate(-50%, 0%);
   }
   .main-technology .info {
     width: 327px;
@@ -883,55 +749,12 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
-  .main-technology h4 {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  .main-technology .dots-menu {
-    display: flex;
-    margin: 15px auto 35px auto;
-  }
-  .main-technology .dots {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    border: 1px solid #979797;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    align-content: center;
-    text-align: center;
-  }
-  .main-technology .dots h4 {
-    color: #ffffff;
-    font-size: 16px;
-  }
-  .main-technology .dots:hover {
-    background-color: #ffffff;
-  }
-  .main-technology .dots:hover h4 {
-    color: #0b0d17;
-  }
-  .main-technology .dots-active {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    align-content: center;
-    text-align: center;
-    background-color: #ffffff;
-  }
-  .main-technology .dots-active h4 {
-    font-size: 16px;
-    color: #0b0d17;
-  }
   .main-technology .nav-text {
     margin: auto;
     text-align: center;
+    color: #d0d6f9;
+    font-size: 14px;
+    letter-spacing: 2.36px;
   }
   .main-technology h3 {
     margin: 15px auto 25px auto;
@@ -940,14 +763,39 @@
     font-size: 24px;
   }
   .main-technology .body-text {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 15px;
     line-height: 25px;
     margin: auto;
     text-align: center;
     width: 327px;
+  }
+  .main-technology .dots-menu {
+    display: flex;
+    margin: 15px auto 35px auto;
+  }
+  .main-technology .dots {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .main-technology .dots h4 {
+    font-size: 16px;
+  }
+  .main-technology .dots-active {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .main-technology .dots-active h4 {
+    font-size: 16px;
+  }
+  .main-technology img {
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 .light {
@@ -1023,7 +871,7 @@ nav {
   justify-content: flex-end;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1441px) {
   i {
     visibility: hidden;
   }
@@ -1058,7 +906,7 @@ nav {
     z-index: 1;
     width: 473px;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.25);
   }
   .nav-links {
     display: flex;
@@ -1095,7 +943,7 @@ nav {
     text-decoration: none;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 1440px) {
   i {
     visibility: hidden;
   }
@@ -1116,8 +964,12 @@ nav {
     flex-direction: row;
     align-items: center;
     position: relative;
-    width: 729px;
+    width: 95%;
     height: 96px;
+  }
+  img {
+    width: 48px;
+    height: 48px;
   }
   .nav-links {
     display: flex;
@@ -1157,7 +1009,7 @@ nav {
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .body-home {
     background-image: url("../assets/home/background-home-mobile.jpg");
   }
