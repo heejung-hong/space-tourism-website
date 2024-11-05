@@ -25,13 +25,23 @@ Users should be able to:
 - View each page and be able to toggle between the tabs to see new information
 
 ### Screenshot
+#### Desktop View
 
+![Screenshot 2024-11-05 at 12 03 07 AM](https://github.com/user-attachments/assets/8e6776de-79c2-4f15-afe2-07332e873313)
+
+#### Tablet View
+
+![Screenshot 2024-11-05 at 12 00 48 AM](https://github.com/user-attachments/assets/90c3a427-4e4e-4a2a-952a-0a9435defb12)
+
+#### Mobile View
+
+![Screenshot 2024-11-04 at 11 58 10 PM](https://github.com/user-attachments/assets/4c0bd977-757f-48e9-bad6-f19d9dc7757f)
 
 
 ### Links
 
 - [Solution URL](https://github.com/heejung-hong/space-tourism-website)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://heejung-hong.github.io/space-tourism-website/)
 
 ## My process
 
@@ -40,25 +50,32 @@ Users should be able to:
 
 - HTML
 - SCSS
+- JavaScript
 
 ### What I learned
 
-This is my first time working with Sass and I'm glad I did with this project.
+This is my first time working with Sass and I'm not sure if this was the right CSS framework because there were many differences in styling.
+
+After watching a couple of tutorials on creating functions for responsive websites, I was able to write a prompt in the Google browser, and the browser AI generated the code below.  I was pleasantly surprised to see the code work and I didn't have to spend additional time trying to figure out how to get another example code to work.
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  function responsiveImage() {
+    const imageElement = document.querySelector("#techImage");
+
+    if (window.matchMedia("(max-width: 1440px)").matches) {
+      imageElement.src = data.technology[0].images.landscape;
+    } else {
+      imageElement.src = data.technology[0].images.portrait;
+    }
+  }
+  // Call the function initially to set the image based on the current screen size
+  responsiveImage();
+  // Add an event listener to update the image when the screen size changes
+  window
+    .matchMedia("(max-width: 1440px)")
+    .addEventListener("change", responsiveImage);
 ```
 
 ### Useful resources
